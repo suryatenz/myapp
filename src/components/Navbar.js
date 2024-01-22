@@ -6,7 +6,7 @@ export default function Navbar(props) {
     return (
         <>
         <div>
-            <nav className={`navbar navbar-expand-lg navbar-${props.modes} bg-${props.modes}`}>
+            <nav className={`navbar navbar-expand-lg transperent-navbar navbar-dark bg-dark`}>
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">{props.title}</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,9 +21,9 @@ export default function Navbar(props) {
                                 <Link className="nav-link" to="/Aboutus">Aboutus</Link>
                             </li>
                         </ul>
-                        <div className={`form-check form-switch  text-${(props.modes === 'light'?'dark':'light')} `}>
+                        <div className="form-check form-switch">
                             <input className="form-check-input" onClick={props.toggle} type="checkbox" role="switch" id="flexSwitchCheckChecked"/>
-                            <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Enable {props.text2Col}Mode</label>
+                            <label className="form-check-label text-white" htmlFor="flexSwitchCheckChecked">Enable {props.text2Col}Mode</label>
                         </div>
                     </div>
                 </div>

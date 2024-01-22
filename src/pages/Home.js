@@ -23,17 +23,17 @@ export default function Home() {
             setMode('dark');
             settext2Col('Light');
             document.body.style.background = '#042743';
+            document.body.style.color='white'
             document.title ="TextUtils-DarkMode"
             // document.body.style.color = 'snowwhite';
             showAlert('Dark Mode Enabled',"success");
-      
           }
           else{
             setMode('light');
             settext2Col('Dark');
             document.body.style.background = 'white';
             document.title ="TextUtils-LightMode"
-            // document.body.style.color = '#042743';
+            document.body.style.color = '#042743';
             showAlert('Light Mode Enabled',"success");
       
           }

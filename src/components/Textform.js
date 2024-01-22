@@ -73,7 +73,7 @@ export default function Textfrom(props){
 
     return(
         <>  
-        <div className="kk" style={{color : props.modes === 'light' ? 'black':'white'}}>
+        <div className="kk">
             <div className="container">
                 <br/>
                 <h3>{props.heading}</h3>

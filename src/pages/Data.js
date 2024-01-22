@@ -44,7 +44,7 @@ export default function Data() {
     <div>
          <Navbar title="TextUtills" modes={mode} text2Col={text2Col} toggle={toggleMode} />
           <Alert alert={alert} />
-          <Aboutus modes={mode}/>
+          {/* <Aboutus modes={mode}/> */}
     </div>
   )
 }
